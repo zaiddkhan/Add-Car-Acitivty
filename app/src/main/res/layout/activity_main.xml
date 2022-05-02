@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_car"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ADD CAR"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".vehicles.AddVehiclesActivity">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_style"
+            android:ems="10"
+            android:hint="@string/name_of_the_vehicle"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/edittext_style"
+            android:ems="10"
+            android:hint="@string/model"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/edittext_style"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColorHint="#757575" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:text="Colour of Vehicle"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Black"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="White"
+                android:textColor="@color/grey" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textColor="@color/red" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grey"
+                android:textColor="#6E6E6E" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/edittext_style"
+            android:ems="10"
+            android:hint="Number of Seat"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColorHint="#757575" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:text="AC/Non AC"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp">
+
+
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AC"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non AC"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:text="Type of Vehicle"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp">
+
+
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bike"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tractor"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="3"
+            android:layout_gravity="center"
+            >
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cv1"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      app:cardElevation="10dp"
+      android:layout_margin="10dp"
+      app:cardCornerRadius="8dp">
+      <FrameLayout
+          android:id="@+id/fl1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/red"
+>
+          <ImageView
+              android:id="@+id/image1"
+              android:layout_width="70dp"
+              android:layout_height="match_parent"
+              android:scaleType="centerCrop"
+              android:visibility="invisible"
+              tools:src="@drawable/image"/>
+             <ImageButton
+                 android:id="@+id/btn1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@color/red"
+                 android:src="@drawable/ic_camera"/>
+      </FrameLayout>
+  </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="8dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        tools:src="@drawable/image"/>
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:id="@+id/btn2"
+                        android:layout_width="wrap_content"
+                        android:background="@color/red"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_camera"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardElevation="10dp"
+                android:background="@color/red"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:visibility="invisible"
+                        tools:src="@drawable/image"/>
+                    <ImageButton
+                        android:id="@+id/btn3"
+                        android:background="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_camera"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="8dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:visibility="invisible"
+                        tools:src="@drawable/image"/>
+                    <ImageButton
+                        android:id="@+id/btn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_camera"
+                        android:background="@color/red"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="8dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:visibility="invisible"
+                        tools:src="@drawable/image"/>
+                    <ImageButton
+                        android:id="@+id/btn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_camera"
+                        android:background="@color/red"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                app:cardCornerRadius="8dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red">
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:visibility="invisible"
+                        tools:src="@drawable/image"/>
+                    <ImageButton
+                        android:id="@+id/btn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/red"
+                        android:src="@drawable/ic_camera"/>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

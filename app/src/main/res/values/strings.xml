@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Addcar</string>
+    <string name="name_of_the_vehicle">Name</string>
+    <string name="model">Model</string>
+</resources>
